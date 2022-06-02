@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .static {
+        position: static;
+      }
+      .relative {
+        position: relative;
+      }
+      .fixed {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+      .absolute {
+        position: absolute;
+        top: 10px;
+      }
+      .sticky{
+        position: sticky;
+top: 0;
+      }
+      .quadrado {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+      }
+      .ret {
+        height: 400px;
+        width: 150px;
+        overflow: auto;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .red {
+        background-color: red;
+      }
+      .green {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ret blue">
+      <div class="quadrado red"></div>
+      <div class="quadrado red"></div>
+      <div class="quadrado red"></div>
+      <div class="quadrado green sticky"></div>
+      <div class="quadrado red"></div>
+      <div class="quadrado red"></div>
+      <div class="quadrado red"></div>
+      <div class="quadrado red"></div>
+      <div class="quadrado red"></div>
+      <div class="quadrado red"></div>
+    </div>
+  </body>
+</html>
