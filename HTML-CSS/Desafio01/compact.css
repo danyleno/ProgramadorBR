@@ -1,0 +1,11 @@
+@media screen and (max-width: 500px){
+  section{
+    background-image: url(imagens/people-p-q.png);
+    background-size: cover;
+   
+  }
+  .formContainer{
+    
+    margin-top: 30%;
+  }
+}
