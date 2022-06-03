@@ -1,11 +1,27 @@
 @media screen and (max-width: 500px){
+  header{
+    border-radius: 0;
+  }
   section{
     background-image: url(imagens/people-p-q.png);
-    background-size: cover;
+    background-size: calc(150%);
    
   }
   .formContainer{
-    
-    margin-top: 30%;
+    margin-top: 35%;
+    margin-left: 35%;
+  }
+  footer{
+    padding: 40px;
+  }
+  .description{
+    display: inline;
+    margin: 0;
+    text-align: justify;
+    max-width: 20%;
+    text-shadow: 1px 1px 2px #00000023;
+  }
+  h3{
+    text-align: center;
   }
 }
