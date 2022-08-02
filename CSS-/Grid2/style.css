@@ -1,0 +1,41 @@
+.container {
+  color: white;
+  display: grid;
+  padding: 10px;
+  background-color: gray;
+  grid-template: ;
+}
+.r1 {
+  background-color: red;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+}
+.r2 {
+  background-color: green;
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+.r3 {
+  background-color: blue;
+  grid-column-end: span 4;
+grid-row-start: 2;
+grid-row-end: 2;
+}
+.r4 {
+  background-color: red;
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+.r5 {
+  background-color: green;
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+.r6 {
+  background-color: blue;
+  grid-column-end: span 6;
+}
+.rect {
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*function novoAluno(nome, idade){
+      return{nome, idade}
+    }
+    let alunos = [
+      novoAluno("João", 33),
+      novoAluno("Maria", 40),
+      novoAluno("Cláudia", 21),
+      novoAluno("José", 29)
+    ]
+    function menosDe30(aluno){
+      return aluno.idade < 30
+    }
+    function maisDe30(aluno){
+      return aluno.idade > 30
+    }
+
+    console.log(alunos.filter(menosDe30))*/
+    let produtos = [
+      {nome: "O hobbit",
+       categoria: "livro"},
+      {nome: "Xbox",
+       categoria: "video-game"},
+      {nome: "Harry Potter",
+       categoria: "livro"}
+    ]
+    function porCateoria(categorias){
+      return function(produto){
+        return produto.categoria ===categorias
+      }
+    }
+    const livros = produtos.filter(porCateoria('video-game'))
+    console.log(livros)
+  </script>
+</body>
+</html>

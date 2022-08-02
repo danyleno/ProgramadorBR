@@ -1,0 +1,37 @@
+.container{
+  color: white;
+  display: grid;
+  padding: 10px;
+  background-color: gray;
+  grid-template-areas: "a1 a1 a1 a1 a2 a2" 
+                       "a3 a3 a3 a3 a3 a3"
+                       "a4 a4 a4 a5 a5 a5"
+                       "a6 a6 a6 a5 a5 a5";
+                      
+}
+.r1{
+  background-color: red;
+  grid-area:a1 ;
+}
+.r2{
+  background-color: green;
+  grid-area:a2 ;
+}
+.r3{
+  background-color: blue;
+  grid-area:a3 ;
+}
+.r4{
+  background-color: red;
+  grid-area:a4 ;
+}
+.r5{
+  background-color: green;
+  grid-area:a5 ;
+}
+.r6{
+  background-color: blue;
+  grid-area:a6 ;
+}
+.rect{
+}

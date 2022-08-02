@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        position: relative;
+        width: 640px;
+        height: 360px;
+      }
+      .video {
+        width: 100%;
+      }
+      .control {
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+      }
+      .btn{
+        position: relative;
+        width: 40px;
+        padding: 10px;
+        top: 100%;
+        transform: translateY(-120%);
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <video src="video/meu-Video.mp4" id="video1" class="video"></video>
+      <div onmouseleave="ocultar()" onmousemove="mostrar()" class="control">
+        <img onclick="retroceder()" class="btn" src="imagens/rewind.png">
+        <img onclick="avançar()" class="btn" src="imagens/skip.png">
+        <img onclick="diminuir_vel()" class="btn" src="imagens/minus.png" >
+        <img onclick="aumentar_vel()" class="btn" src="imagens/plus.png">
+        <img onclick="play()" class="btn" src="imagens/play.png">
+        <img onclick="stop_()" class="btn" src="imagens/stop.png">
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

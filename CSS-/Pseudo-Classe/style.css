@@ -1,0 +1,6 @@
+input:focus{
+  color: red;
+}
+li:nth-of-type(3){
+  background-color: blue;
+}

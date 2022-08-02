@@ -1,0 +1,25 @@
+p::first-line{
+  background-color: red;
+}
+h1::first-letter{
+color: white;
+background-color: red;
+font-size: 50px;
+}
+li{
+  list-style: none;
+}
+li::before{
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+background-image: url(660464.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+p::selection{
+  background-color: rgb(255, 255, 92);
+  color: orangered;
+}

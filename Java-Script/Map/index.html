@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function novoAluno(nome, idade) {
+        return { nome, idade }
+      }
+      let alunos = [
+        novoAluno('João', 33),
+        novoAluno('Maria', 40),
+        novoAluno('Cláudia', 21),
+        novoAluno('José', 29)
+      ]
+      function nomeIdade(aluno) {
+        return aluno.nome + ' tem ' + aluno.idade + ' anos.'
+      }
+      function filtro(callback) {
+        let alunosFiltrados = []
+        for (let aluno of this) {
+          if (callback(aluno)) {
+            alunosFiltrados.push(aluno)
+          }
+        }
+        return alunosFiltrados
+      }
+      alunos.filtro = filtro
+      console.log(alunos.filtro(nomeIdade))
+      /*console.log(alunos.map(nomeIdade))
+    let alunoB = Object.assign({}, alunoA)*/
+    </script>
+  </body>
+</html>

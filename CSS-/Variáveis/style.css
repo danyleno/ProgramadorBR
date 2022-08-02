@@ -1,0 +1,20 @@
+:root{
+--var-cor1: red;
+--square-size: 50px;
+}
+.p2{
+background-color: var(--varcor1);
+}
+.p3{
+
+}
+.sqr1{
+  width: var(--square-size);
+  height: var(--square-size);
+  background-color: brown;
+}
+.sqr2{
+  width: var(--square-size);
+  height: var(--square-size);
+  background-color: green;
+}
